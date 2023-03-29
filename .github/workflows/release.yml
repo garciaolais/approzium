@@ -39,7 +39,7 @@ jobs:
           POETRY_HTTP_BASIC_PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
           POETRY_HTTP_BASIC_PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       - name: Publish Authenticator Docker Image
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: approzium/authenticator
           username: ${{ secrets.DOCKER_USERNAME }}
